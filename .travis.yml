@@ -20,4 +20,4 @@ script:
   - adb shell setprop dalvik.vm.dexopt-flags v=n,o=v
 
 after_success:
-  - bash echo yata!
+  - bash echo yata! 
