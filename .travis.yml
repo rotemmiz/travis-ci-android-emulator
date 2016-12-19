@@ -31,10 +31,6 @@ before_install:
   - set -e
   - ./scripts/installAndroidSDK.sh
 
-
-install:
-
-
 script:
     - android list targets
     - echo no | android create avd --force -n test -t android-23 --abi x86
