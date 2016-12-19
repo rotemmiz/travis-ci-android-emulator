@@ -29,9 +29,10 @@ before_cache:
 
 before_install:
   - set -e
+  - ./scripts/installAndroidSDK.sh
+
 
 install:
-  - ./scripts/installAndroidSDK.sh
 
 
 script:
