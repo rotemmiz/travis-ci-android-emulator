@@ -36,6 +36,7 @@ install:
 
 
 script:
+    - android list targets
     - echo no | android create avd --force -n test -t android-23 --abi x86
     - emulator -avd test -no-skin -no-audio -no-window &
     - android-wait-for-emulator
