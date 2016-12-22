@@ -9,7 +9,6 @@ env:
 before_install:
   - sudo apt-get update
   - sudo apt-get install qemu-kvm
-  - sudo kvm-ok
 
 android:
   components:
