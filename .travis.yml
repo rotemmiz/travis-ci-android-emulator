@@ -1,4 +1,6 @@
 sudo: required
+services:
+  - docker
 language: android
 jdk: oraclejdk8
 env:
@@ -9,6 +11,7 @@ env:
 before_install:
   - sudo apt-get update
   - sudo apt-get install qemu-kvm
+  - kvm-ok
 
 android:
   components:
