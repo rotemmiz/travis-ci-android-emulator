@@ -10,10 +10,6 @@ env:
 git:
   depth: 3
 
-branches:
-  only:
-  - master
-
 cache:
   directories:
     - $HOME/.gradle/
@@ -25,6 +21,7 @@ before_cache:
   - rm -rf $HOME/.gradle/caches/*/plugin-resolution/
 
 before_install:
+  - sysctl -a | grep machdep.cpu.features
   - ./scripts/installAndroidSDK.sh
 
 script:
